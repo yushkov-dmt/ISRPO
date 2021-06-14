@@ -23,6 +23,7 @@ namespace ISRPO
         public MainWindow()
         {
             InitializeComponent();
+            int sss = 0;
         }
     }
 }
