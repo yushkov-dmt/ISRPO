@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="350" Width="300">
+    <Grid Margin="255,0,233,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="243*"/>
+            <RowDefinition Height="76*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Авторизация" HorizontalAlignment="Left" Height="53" Margin="-180,224,0,0" VerticalAlignment="Top" Width="141" Click="Button_Click" Grid.RowSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Name="testtextbox" Margin="-202,102,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="188" TextChanged="TextBox_TextChanged"/>
+        <PasswordBox x:Name="passwordBlock" HorizontalAlignment="Left" Margin="-202,151,0,0" VerticalAlignment="Top" Width="188" Height="37" PasswordChanged="PasswordChangedHandler"/>
+
     </Grid>
 </Window>

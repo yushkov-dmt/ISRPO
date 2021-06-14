@@ -23,7 +23,31 @@ namespace ISRPO
         public MainWindow()
         {
             InitializeComponent();
-            int sss = 0;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string login = testtextbox.Text;
+            string password = testtextbox.Text = passwordBlock.Password;
+
+            if (login == "name" && password == "password")
+            {
+                MessageBox.Show("Вы успешно авторизировались!");
+            }
+            else
+            {
+                MessageBox.Show("Неправильно заполнено имя или пароль!");
+            }
+        }
+
+        private void PasswordChangedHandler(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
         }
     }
 }
